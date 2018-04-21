@@ -23,15 +23,21 @@ class PostsShow extends Component {
     }
     return (
       <div>
+        <div className="jumbotron">
+          <h1>Blog App</h1>
+          <p>Display a single post</p>
+        </div>
+        <h3 className="pull-left">{post.title}</h3>
+        <p className="panel-body">{post.content}</p>
+        <div className="panel-footer">
+          Categories: <span className="label label-default">{post.categories}</span>
+        </div>
         <Link to="/" className="btn btn-primary">
           Back to Index
         </Link>
-        <button className="btn btn-danger pull-xs-right" onClick={this.onDeleteClick.bind(this)}>
+        <button className="btn btn-danger" onClick={this.onDeleteClick.bind(this)}>
           Delete Post
         </button>
-        <h3>{post.title}</h3>
-        <h6>Categories: {post.categories}</h6>
-        <p>{post.content}</p>
       </div>
     );
   }

@@ -16,9 +16,12 @@ class PostsIndex extends Component {
     ));
   }
   render() {
-    console.log(this.props.posts);
     return (
       <div>
+        <div className="jumbotron">
+          <h1>Blog App</h1>
+          <p>List of all posts</p>
+        </div>
         <div className="text-xs-right">
           <Link className="btn btn-primary" to="/posts/new">
             Add a post
