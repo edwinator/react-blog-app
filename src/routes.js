@@ -6,7 +6,7 @@ import PostsIndex from './components/PostsIndex';
 const Greeting = () => <div>Helllo</div>;
 
 export default (
-  <Route path="/" component={App}>
+  <Route basename="/react-blog-app" path="/" component={App}>
     <IndexRoute component={PostsIndex} />
     <Route path="greet" component={Greeting} />
   </Route>

@@ -42,5 +42,6 @@
     "redux": "^3.0.4",
     "redux-form": "^7.3.0",
     "redux-promise": "^0.5.3"
-  }
+  },
+  "homepage": "https://edwinator.github.io/react-blog-app/"
 }
